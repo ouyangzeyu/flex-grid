@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid布局</title>
+</head>
+<style>
+    #box {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+    }
+
+    #box .children {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div id="box">
+        <div class="children child1">1</div>
+        <div class="children child2">2</div>
+        <div class="children child3">3</div>
+        <div class="children child4">4</div>
+        <div class="children child5">5</div>
+        <div class="children child6">6</div>
+        <div class="children child7">7</div>
+        <div class="children child8">8</div>
+        <div class="children child9">9</div>
+    </div>
+</body>
+
+</html>
