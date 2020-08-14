@@ -11,26 +11,52 @@
         display: grid;
         grid-template-columns: 100px 100px 100px;
         grid-template-rows: 100px 100px 100px;
+        /* grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px); */
+        /* grid-row-gap: 20px;
+        grid-column-gap: 20px; */
+        grid-gap: 20px 10px;
+        justify-items: center;
+        align-items: center;
     }
 
     #box .children {
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
         background-color: red;
     }
 </style>
 
 <body>
     <div id="box">
-        <div class="children child1">1</div>
-        <div class="children child2">2</div>
-        <div class="children child3">3</div>
-        <div class="children child4">4</div>
-        <div class="children child5">5</div>
-        <div class="children child6">6</div>
-        <div class="children child7">7</div>
-        <div class="children child8">8</div>
-        <div class="children child9">9</div>
+        <!-- div.children.child$*9>div{$} -->
+        <div class="children child1">
+            <div>1</div>
+        </div>
+        <div class="children child2">
+            <div>2</div>
+        </div>
+        <div class="children child3">
+            <div>3</div>
+        </div>
+        <div class="children child4">
+            <div>4</div>
+        </div>
+        <div class="children child5">
+            <div>5</div>
+        </div>
+        <div class="children child6">
+            <div>6</div>
+        </div>
+        <div class="children child7">
+            <div>7</div>
+        </div>
+        <div class="children child8">
+            <div>8</div>
+        </div>
+        <div class="children child9">
+            <div>9</div>
+        </div>
     </div>
 </body>
 
